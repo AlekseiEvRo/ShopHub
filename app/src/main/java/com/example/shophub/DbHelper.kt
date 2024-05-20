@@ -1,5 +1,6 @@
 package com.example.shophub
 
+import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
@@ -27,6 +28,14 @@ class DbHelper(val context: Context, val factory: SQLiteDatabase.CursorFactory?)
         val db = this.writableDatabase
         db.insert("users", null, values)
         db.close()
+    }
+
+    @SuppressLint("Recycle")
+    fun getUser(login: String, password: String): Boolean{
+        val db = this.readableDatabase
+
+        val result = db.rawQuery("SELECT * FROM users WHERE login = '$login' AND password = '$password'", null)
+        return result.moveToFirst()
     }
 
 }

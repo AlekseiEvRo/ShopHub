@@ -5,4 +5,6 @@
     <string name="email">Email</string>
     <string name="password">Пароль</string>
     <string name="Continue">Продолжить</string>
+    <string name="authorisation">Войдите в аккаунт</string>
+    <string name="auth_button">Войти</string>
 </resources>

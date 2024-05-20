@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#201E28"
-    tools:context=".RegActivity">
+    tools:context=".AuthActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,10 +17,10 @@
         android:layout_marginTop="170dp"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:text="@string/Create_account" />
+        android:text="@string/authorisation" />
 
     <EditText
-        android:id="@+id/user_login"
+        android:id="@+id/user_login_auth"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -32,19 +32,7 @@
         android:textColor="#fdfdfd"/>
 
     <EditText
-        android:id="@+id/user_email"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="@string/email"
-        android:textColorHint="#6a6a6a"
-        android:textColor="#fdfdfd"/>
-
-    <EditText
-        android:id="@+id/user_password"
+        android:id="@+id/user_password_auth"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -56,25 +44,23 @@
         android:textColor="#fdfdfd"/>
 
     <Button
-        android:id="@+id/button_reg"
+        android:id="@+id/button_auth"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:backgroundTint="#e2a600"
         android:layout_marginTop="30dp"
-        android:text="@string/Continue" />
-
-
+        android:text="@string/auth_button" />
 
     <TextView
-        android:id="@+id/link_to_auth"
+        android:id="@+id/link_to_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:fontFamily="@font/inter"
-        android:text="Авторизоваться"
+        android:text="Зарегистрироваться"
         android:textColor="#fdfdfd"
         android:textSize="17sp"
         android:textStyle="bold" />
