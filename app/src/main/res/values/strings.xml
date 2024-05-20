@@ -7,4 +7,5 @@
     <string name="Continue">Продолжить</string>
     <string name="authorisation">Войдите в аккаунт</string>
     <string name="auth_button">Войти</string>
+    <string name="items">Товары</string>
 </resources>
