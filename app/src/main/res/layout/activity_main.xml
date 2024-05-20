@@ -14,36 +14,55 @@
         android:fontFamily="@font/inter_bold"
         android:textColor="#fdfdfd"
         android:layout_gravity="center"
-        android:text="Hello World!" />
+        android:layout_marginTop="170dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="@string/Create_account" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/user_login"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
         android:ems="10"
         android:inputType="text"
-        android:text="Name" />
+        android:hint="@string/login"
+        android:textColorHint="#6a6a6a"
+        android:textColor="#fdfdfd"/>
 
     <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/user_email"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:textColorHint="#6a6a6a"
+        android:textColor="#fdfdfd"/>
 
     <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/user_password"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="#6a6a6a"
+        android:textColor="#fdfdfd"/>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/button_reg"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:backgroundTint="#e2a600"
+        android:layout_marginTop="30dp"
+        android:text="@string/Continue" />
 
 </LinearLayout>
