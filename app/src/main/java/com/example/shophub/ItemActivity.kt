@@ -17,7 +17,7 @@ class ItemActivity : AppCompatActivity() {
         Checkout.preload(applicationContext)
         val co = Checkout()
 
-        co.setKeyID("rzp_live_EgmQoGwAT33eJi")
+        co.setKeyID("rzp_test_FnsocSBMo7Thbq")
 
         val title: TextView = findViewById(R.id.item_title)
         val text: TextView = findViewById(R.id.item_text)
@@ -42,9 +42,9 @@ class ItemActivity : AppCompatActivity() {
             //You can omit the image option to fetch the image from the dashboard
             options.put("image","http://example.com/image/rzp.jpg")
             options.put("theme.color", "#f00");
-            options.put("currency","RUB");
-            options.put("order_id", "order_1");
-            options.put("amount",10000)//pass amount in currency subunits
+            options.put("currency","MYR");
+            options.put("order_id", "order_ODToiMvOB0YZu9");
+            options.put("amount",100)//pass amount in currency subunits
 
             co.open(activity,options)
         }catch (e: Exception){
